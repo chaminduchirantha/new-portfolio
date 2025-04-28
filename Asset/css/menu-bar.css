@@ -9,6 +9,10 @@ body {
     overflow-x: hidden;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 a{
     text-decoration: none;
     color: white;
@@ -28,6 +32,28 @@ a{
     border-bottom: 1px solid gold;
     z-index: 800;
 }
+
+.navbar ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 4px;
+    border-radius: 10px;
+    background-color: gold;
+    transition:.5s ;
+    bottom: 0;
+    top: 23px;
+}
+
+.navbar ul li a:hover {
+    color: gold;
+}
+
+/*.navbar ul li a::after{*/
+/*    width: 50%;*/
+/*}*/
+
 
 .navbar .logo{
     font-size: 30px;
