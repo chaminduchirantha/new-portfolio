@@ -23,9 +23,10 @@ a{
     padding: 25px 9%;
     display: flex;
     justify-content: space-between;
+    background-color: #1e272e;
     align-items: center;
     border-bottom: 1px solid gold;
-    z-index: 100;
+    z-index: 800;
 }
 
 .navbar .logo{
