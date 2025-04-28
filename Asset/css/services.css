@@ -7,11 +7,20 @@
 
 .services-section{
     max-width: 1200px;
-    margin: auto;
+    margin-left: -20px;
     padding: 60px 20px;
     display: grid;
-    gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
     color: black;
+}
+
+.services-section h1{
+    font-size: 55px;
+    color: white;
+    grid-column: 1/-1;
+    text-align: center;
+    align-self: center;
 }
 
 .service-card{
@@ -21,6 +30,7 @@
     position: relative;
     border-radius: 30px;
     border: 3px solid gold;
+    margin: 20px;
 }
 
 .service-card p{
@@ -33,6 +43,16 @@
     left: 0;
     right: 0;
     bottom: 0;
+    margin: auto;
+}
+
+.service-card h2{
+    font-size: 33px;
+    position: absolute;
+    left: 20%;
+    right: 0;
+    top: 10%;
+    /*bottom: 0;*/
     margin: auto;
 
 }
