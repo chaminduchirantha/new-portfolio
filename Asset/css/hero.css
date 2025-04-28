@@ -15,6 +15,7 @@
     padding: 250px 10% 0;
     color: white;
     font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
 
 }
 
@@ -35,6 +36,9 @@
 
 .hero h1{
     font-size: 65px;
+    text-shadow:  0 0 10px gold;
+
+
 }
 
 .hero h2{
@@ -43,7 +47,20 @@
     top: -30px;
     line-height: 1.4;
     color: gold;
+    overflow-x: hidden;
+    animation-name: animate;
+    animation-duration: 26s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
 
+@keyframes animate {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
 }
 
 .hero p{
