@@ -11,6 +11,7 @@ body {
 a{
     text-decoration: none;
     color: white;
+    font-family: "Open Sans", sans-serif;
 }
 
 .navbar{
@@ -22,10 +23,15 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid gold;
 }
 
 .navbar .logo{
     font-size: 30px;
+}
+
+.navbar .logo:hover{
+    color: gold;
 }
 
 .navbar ul{
@@ -36,10 +42,148 @@ a{
 }
 
 .navbar ul li{
-    margin-left: 35px;
+    margin-left: 30px;
 }
 
 .navbar ul li a{
     text-decoration: none;
     font-size: 20px;
+}
+.navbar ul li a:hover{
+    color: gold;
+}
+
+#menu-bar{
+    width: 35px;
+    position: absolute;
+    right: 40px;
+    top: 0;
+    bottom: 0px;
+    margin: auto;
+    display: none;
+}
+
+
+@media all and (max-width: 320px) {
+    #menu-bar{
+        display: block;
+    }
+
+    .navbar ul li a{
+        display: none;
+    }
+
+    .navbar .logo{
+        font-size: 20px;
+        width: 100%;
+    }
+
+}
+
+@media all and (max-width: 375px) {
+    #menu-bar{
+        display: block;
+    }
+    .navbar ul li a{
+        display: none;
+    }
+
+    .navbar .logo{
+        font-size: 20px;
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 480px) {
+    #menu-bar{
+        display: block;
+    }
+
+    .navbar ul li a{
+        display: none;
+    }
+
+    .navbar .logo{
+        font-size: 20px;
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 425px) {
+    #menu-bar{
+        display: block;
+    }
+
+    .navbar ul li a{
+        display: none;
+    }
+
+    .navbar .logo{
+        font-size: 20px;
+        width: 100%;
+    }
+}
+
+
+@media all and (max-width: 500px) {
+    #menu-bar{
+        display: block;
+    }
+    .navbar ul li a{
+        display: none;
+    }
+
+    .navbar .logo{
+        font-size: 20px;
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 700px) {
+    #menu-bar{
+        display: block;
+    }
+    .navbar ul li a{
+        display: none;
+    }
+    .navbar .logo{
+        font-size: 20px;
+        width: 100%;
+    }
+
+}
+
+@media all and (max-width: 780px) {
+    #menu-bar{
+        display: block;
+    }
+
+    .navbar ul li a{
+        display: none;
+    }
+
+    .navbar .logo{
+        font-size: 20px;
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 785px) and (max-width: 1130px) {
+    #menu-bar{
+        display: block;
+    }
+    .navbar ul li a{
+        display: none;
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .navbar .logo{
+        font-size: 20px;
+        width: 100%;
+    }
+
+    a{
+        font-size: 20px;
+    }
 }
