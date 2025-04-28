@@ -24,6 +24,7 @@ a{
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid gold;
+    z-index: 100;
 }
 
 .navbar .logo{
