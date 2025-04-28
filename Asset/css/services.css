@@ -29,8 +29,8 @@
     background-color: rgba(255, 215, 0, 0.48);
     position: relative;
     border-radius: 30px;
-    border: 3px solid gold;
     margin: 20px;
+    overflow: hidden;
 }
 
 .service-card p{
@@ -54,8 +54,30 @@
     top: 10%;
     /*bottom: 0;*/
     margin: auto;
+}
+
+.service-card::before{
+    content: "";
+    position: absolute;
+    width: 200%;
+    background-image: linear-gradient(gold, rgba(159, 255, 0, 0.78));
+    height: 130%;
+    z-index: -200;
+    border-radius: 30px;
+    animation: border 14s linear infinite;
+}
+
+@keyframes border {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+
+    }
 
 }
+
 
 @media (max-width: 1024px) {
     .services-section {
