@@ -20,20 +20,11 @@
 }
 
 .about-section h1{
-    font-size: 50px;
+    font-size: 58px;
     font-family: "Open Sans", sans-serif;
     position: absolute;
     top:0;
-}
-
-.about-content h1{
-    font-size: 45px;
-    position: absolute;
-    left: 440px;
-    right: 0;
-    top: 200px;
-    bottom: 100px;
-    margin: auto;
+    left: 42%;
 }
 
 .about-content p{
@@ -42,9 +33,173 @@
     line-height:1.6;
     text-align: center;
     position: relative;
-    top: -50%;
-    left: 0;
-    /*right: 10%;*/
-    bottom: 0;
-    margin: auto;
+    top: -50px;
+
+}
+
+.about-content span{
+    color: gold;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.about-details p {
+    font-size: 23px;
+    line-height: 1.9;
+    margin-left: 120px;
+    margin-top: 10px;
+}
+
+.age{
+    position: absolute;
+    right: 40%;
+    top: 76%;
+    text-align: center;
+}
+
+.location{
+    position: absolute;
+    right: 38%;
+    top: 83%;
+}
+.email{
+    position: absolute;
+    right: 24%;
+    top: 91%;
+}
+
+/* Existing styles... */
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .about-section {
+        padding: 200px 8% 0;
+    }
+
+    .about-section h1 {
+        font-size: 50px;
+        left: 40%;
+    }
+
+    .about-content h1 {
+        font-size: 40px;
+        left: 400px;
+    }
+
+    .about-content p {
+        font-size: 22px;
+    }
+
+    .about-details p {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 180px 6% 0;
+        height: auto;
+    }
+
+    .about-section h1 {
+        font-size: 40px;
+        left: 35%;
+    }
+
+    .about-content h1 {
+        font-size: 30px;
+        /*left: 35%;*/
+        top: 100px;
+    }
+
+    .about-content p {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .about-details p {
+        font-size: 19px;
+        margin-left: 40px;
+        text-align: center;
+    }
+
+    .age, .location, .email {
+        position: static;
+        margin: 10px 0;
+    }
+
+    .about-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    .about-section {
+        padding: 150px 5% 0;
+    }
+
+    .about-section h1 {
+        font-size: 35px;
+        left: 30%;
+    }
+
+    .about-content h1 {
+        font-size: 28px;
+        left: 25%;
+        /*top: 90px;*/
+    }
+
+    .about-content p {
+        font-size: 18px;
+    }
+
+    .about-details p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 320px) {
+    .about-section h1 {
+        font-size: 32px;
+        left: 8%;
+    }
+
+    .about-content h1 {
+        font-size: 18px;
+        /*left: 2%;*/
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+
+    .about-details p {
+        font-size: 16px;
+        position: relative;
+        left: -20px;
+    }
+}
+
+@media (max-width: 230px) {
+    .about-section h1 {
+        font-size: 25px;
+        left: 20%;
+    }
+
+    .about-content h1 {
+        font-size: 20px;
+        left: 20%;
+        top: 80px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+    }
+
+    .about-details p {
+        font-size: 14px;
+    }
 }
