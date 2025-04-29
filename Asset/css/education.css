@@ -108,8 +108,19 @@
         grid-template-columns: repeat(2, 1fr);
     }
     .education-card {
-        width: 40vw;
+        width: 45vw;
         height: 40vh;
+        margin: 10px;
+        left: 15px;
+    }
+
+    .education-card p{
+        font-size: 16px;
+    }
+
+    .education-section h1{
+        font-size: 42px;
+        top: 10px;
     }
 }
 
