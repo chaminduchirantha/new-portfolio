@@ -33,7 +33,12 @@
     margin: 20px;
     overflow: hidden;
     box-shadow: 0 0 10px gold;
+    transition-duration: 800ms;
+    cursor: pointer;
+}
 
+.service-card:hover{
+    transform: translatey(-20px);
 }
 
 .service-card p{
