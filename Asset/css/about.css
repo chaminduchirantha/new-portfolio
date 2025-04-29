@@ -30,10 +30,14 @@
     width: 100%;
     font-size: 25px;
     line-height:1.6;
-    text-align: center;
+    /*text-align: center;*/
     position: relative;
     top: -50px;
 
+}
+
+.text{
+    text-align: left;
 }
 
 .about-content span{
