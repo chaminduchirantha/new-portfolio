@@ -32,6 +32,8 @@
     border-radius: 30px;
     margin: 20px;
     overflow: hidden;
+    box-shadow: 0 0 10px gold;
+
 }
 
 .service-card p{
@@ -63,6 +65,7 @@
     position: absolute;
     width: 200%;
     background-image: linear-gradient(gold, rgba(159, 255, 0, 0.78));
+    box-shadow: 0 0 10px gold;
     height: 130%;
     z-index: -200;
     border-radius: 30px;
@@ -75,6 +78,8 @@
     }
     to{
         transform: rotate(360deg);
+        box-shadow: 0 0 10px gold;
+
 
     }
 
