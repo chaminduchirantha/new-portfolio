@@ -31,10 +31,14 @@
     margin-left: 15px;
     border-radius: 20px;
     position: relative;
-    /*top: -0%;*/
     border: 2px solid gold;
     align-items: center;
+    cursor: pointer;
+    transition-duration: 800ms;
+    overflow: hidden;
+    z-index: 1000;
 }
+
 
 .education-card img{
     width: 75px;
@@ -59,4 +63,73 @@
     right: 0;
     bottom: 0;
     margin: auto;
+}
+
+@media (max-width: 1024px) {
+    .education-section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .education-card {
+        width: 28vw;
+        height: 40vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .education-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .education-card {
+        width: 40vw;
+        height: 40vh;
+    }
+}
+
+@media (max-width: 425px) {
+    .education-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .education-card {
+        width: 80vw;
+        height: 40vh;
+    }
+}
+
+@media (max-width: 375px) {
+    .education-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .education-card {
+        width: 85vw;
+        height: 40vh;
+    }
+    .education-card p{
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 650px) {
+    .education-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .education-card {
+        width: 90vw;
+        height: 40vh;
+        margin: 5px auto;
+
+    }
+
+    .education-card p {
+        font-size: 15px;
+    }
+
+    .education-card img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .education-section h1{
+        font-size: 35px;
+        top: 10px;
+    }
 }
