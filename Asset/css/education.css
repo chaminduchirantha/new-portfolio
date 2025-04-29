@@ -36,9 +36,37 @@
     cursor: pointer;
     transition-duration: 800ms;
     overflow: hidden;
-    z-index: 1000;
+    /*z-index: 1000;*/
+    box-shadow: 0 0 10px gold;
+
 }
 
+.education-card::before{
+    content: "";
+    position: absolute;
+    width: 23vw;
+    background-image: linear-gradient(gold, rgb(241, 255, 0));
+    box-shadow: 0 0 10px gold;
+    height: 45vh;
+    z-index: -2;
+    animation: border2 10s linear infinite;
+}
+
+@keyframes border2 {
+    from{
+       transform: translateX(100%);
+    }
+
+    to{
+       transform: translateX(-100%);
+        box-shadow: 0 0 10px gold;
+
+    }
+}
+
+.education-card:hover{
+    transform: translatey(-15px);
+}
 
 .education-card img{
     width: 75px;
