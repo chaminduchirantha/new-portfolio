@@ -7,7 +7,7 @@
 .my-works{
     display: grid;
     grid-template-columns:1fr 1fr;
-    padding: 450px 10% 0;
+    padding: 150px 10% 0;
     color: white;
     position: relative;
 }
@@ -15,18 +15,21 @@
 .my-works h1{
     font-size: 55px;
     text-align: center;
+    position: relative;
+    top: 150px;
     grid-column: 1/-1;
 }
 
 .woks-card{
-    width: 23vw;
-    height: 45vh;
+    width: 28vw;
+    height: 56vh;
     background-color: rgba(255, 215, 0, 0.48);
     margin: 10px;
     margin-left: 105px;
     position: relative;
     border:3px solid gold;
-    top: 40%;
+    top: 50%;
+    left: -20px;
     border-radius: 20px;
     align-items: center;
 }
@@ -34,11 +37,28 @@
 .woks-card h2{
     font-size: 30px;
     position: absolute;
-    left: 15%;
+    left: 25%;
     right: 0;
     top:10%;
     bottom: 0;
     margin: auto;
+}
+
+.woks-card p{
+    width: 90%;
+    font-size: 18px;
+    line-height: 1.8;
+    position: relative;
+    top: 30%;
+    left: 10%;
+    color: black;
+    font-weight: 500;
+}
+
+.woks-card span{
+    line-height: 2.5;
+    position: relative;
+    left: 10%;
 }
 
 
