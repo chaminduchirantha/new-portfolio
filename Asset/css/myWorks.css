@@ -1,64 +1,170 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.my-works{
-    display: grid;
-    grid-template-columns:1fr 1fr;
-    padding: 150px 10% 0;
+.my-works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px 5% 0;
     color: white;
     position: relative;
 }
 
-.my-works h1{
+.my-works h1 {
     font-size: 55px;
+    width: 100%;
     text-align: center;
+    margin-bottom: 50px;
     position: relative;
-    top: 150px;
-    grid-column: 1/-1;
+    top: 120px;
 }
 
-.woks-card{
+.woks-card {
     width: 28vw;
-    height: 56vh;
+    height: 51vh;
     background-color: rgba(255, 215, 0, 0.48);
-    margin: 10px;
-    margin-left: 105px;
-    position: relative;
-    border:3px solid gold;
-    top: 50%;
-    left: -20px;
+    margin: 20px;
+    border: 3px solid gold;
     border-radius: 20px;
+    position: relative;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
 
-.woks-card h2{
+.woks-card h2 {
     font-size: 30px;
-    position: absolute;
-    left: 25%;
-    right: 0;
-    top:10%;
-    bottom: 0;
-    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-.woks-card p{
-    width: 90%;
+.woks-card p {
     font-size: 18px;
     line-height: 1.8;
-    position: relative;
-    top: 30%;
-    left: 10%;
     color: black;
     font-weight: 500;
+    text-align: center;
 }
 
-.woks-card span{
+.woks-card span {
     line-height: 2.5;
-    position: relative;
-    left: 10%;
+    text-align: center;
+}
+
+/* Breakpoint: 1024px */
+@media (max-width: 1024px) {
+    .woks-card {
+        width: 40vw;
+        height: auto;
+    }
+
+    .my-works h1 {
+        font-size: 45px;
+    }
+}
+
+/* Breakpoint: 768px */
+@media (max-width: 768px) {
+    .my-works {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .woks-card {
+        width: 80%;
+        height: auto;
+    }
+
+    .my-works h1 {
+        font-size: 40px;
+    }
+}
+
+/* Breakpoint: 425px */
+@media (max-width: 425px) {
+    .woks-card {
+        width: 45%;
+    }
+
+    .my-works h1 {
+        font-size: 36px;
+    }
+
+    .woks-card h2 {
+        font-size: 24px;
+    }
+
+    .woks-card p {
+        font-size: 16px;
+    }
+}
+
+/* Breakpoint: 375px */
+@media (max-width: 375px) {
+    .woks-card {
+        width: 95%;
+
+    }
+
+    .my-works h1 {
+        font-size: 32px;
+    }
+
+    .woks-card h2 {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 379px) and (max-width: 560px) {
+    .woks-card {
+        width:90vw;
+        height: auto;
+        position: relative;
+        top:540px;
+        left: -10px;
+    }
+
+    .my-works h1 {
+        font-size: 28px;
+        top: 550px;
+        left: -10px;
+    }
+
+    .woks-card h2 {
+        font-size: 20px;
+    }
+
+    .woks-card p {
+        font-size: 14px;
+    }
 }
 
 
+@media (min-width: 220px) and (max-width: 378px) {
+    .woks-card {
+        width:90vw;
+        height: auto;
+        position: relative;
+        top:540px;
+        left: -10px;
+    }
+
+    .my-works h1 {
+        font-size: 28px;
+        top: 550px;
+        left: -10px;
+    }
+
+    .woks-card h2 {
+        font-size: 20px;
+    }
+
+    .woks-card p {
+        font-size: 14px;
+    }
+}
