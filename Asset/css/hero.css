@@ -65,10 +65,11 @@
 }
 
 .hero p{
-    font-size: 20px;
+    font-size: 24px;
     width: 60%;
     margin-top: -20px;
     line-height: 1.6;
+    align-items: center;
 }
 
 .social-icons a{
@@ -80,7 +81,12 @@
     color: gold;
     margin: 0 10px;
     margin-top: 20px;
+    transition-duration: 800ms;
 
+}
+
+.social-icons a:hover{
+    transform: translateY(-10px);
 }
 
 .social-icons a:hover{
@@ -97,13 +103,18 @@
     height: 7vh;
     font-weight: 700;
     border-radius: 20px;
-    /*margin-left: 185px;*/
     position: absolute;
     left: 0;
     right: 0;
-    top: 450px;
+    top: 490px;
     bottom: 0;
     margin: auto;
+    cursor: pointer;
+    transition-duration: 800ms;
+}
+
+.btn-cv:hover{
+    transform: translateY(15px);
 }
 
 .btn-cv:hover{
