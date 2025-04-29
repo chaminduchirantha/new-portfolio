@@ -22,7 +22,7 @@
     color: white;
     justify-self: center;
     position: absolute;
-    top: -30px;
+    top: 70px;
 }
 
 .skill-card {
@@ -31,7 +31,7 @@
     margin: -6px;
     border-radius: 10px;
     position: relative;
-    bottom: -50px;
+    bottom: -200px;
     cursor: pointer;
     background-color: rgba(255, 215, 0, 0.48);
     border: 2px solid gold;
@@ -68,13 +68,6 @@
     margin: auto;
 }
 
-
-
-/* 425px - Larger Phones */
-
-/* 768px - Tablets */
-
-/* 1024px - Small Laptops */
 @media (min-width: 1024px) {
     .skill-card {
         width: 6vw;
