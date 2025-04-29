@@ -31,11 +31,11 @@
     border-radius: 10px;
     position: relative;
     margin-top: 190px;
+    cursor: pointer;
     background-color: rgba(255, 215, 0, 0.48);
     border: 2px solid gold;
     transition-duration: 800ms;
     box-shadow: 0 0 10px gold;
-    cursor: pointer;
     animation-name: gold;
     animation-duration:26s;
     animation-iteration-count: infinite;
