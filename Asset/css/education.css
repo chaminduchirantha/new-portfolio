@@ -93,71 +93,96 @@
     margin: auto;
 }
 
-@media (max-width: 1024px) {
-    .education-section {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .education-card {
-        width: 28vw;
-        height: 40vh;
-    }
-}
-
-@media (max-width: 768px) {
+@media (min-width: 1024px) and (max-width: 1250px){
     .education-section {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .education-card {
         width: 45vw;
         height: 40vh;
-        margin: 10px;
-        left: 15px;
+        margin: 20px;
     }
 
-    .education-card p{
-        font-size: 16px;
+    .education-card p {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .education-card img{
+        width: 60px;
+        height: 60px;
     }
 
     .education-section h1{
-        font-size: 42px;
+        font-size: 52px;
         top: 10px;
     }
 }
 
-@media (max-width: 425px) {
+@media (min-width: 651px) and (max-width: 1023px){
     .education-section {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
+
     .education-card {
-        width: 80vw;
+        width: 45vw;
         height: 40vh;
+        margin: 20px;
+    }
+
+    .education-card p {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .education-card img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .education-section h1{
+        font-size: 40px;
+        top: 10px;
     }
 }
 
-@media (max-width: 375px) {
-    .education-section {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .education-card {
-        width: 85vw;
-        height: 40vh;
-    }
-    .education-card p{
-        font-size: 15px;
-    }
-}
-
-@media (min-width: 300px) and (max-width: 650px) {
+@media (min-width: 379px) and (max-width: 650px){
     .education-section {
         grid-template-columns: repeat(1, 1fr);
     }
     .education-card {
         width: 90vw;
         height: 40vh;
-        margin: 5px auto;
-        position: relative;
-        left: 5px;
+        margin: 10px;
+        left: 13px;
+    }
 
+    .education-card p {
+        font-size: 15px;
+    }
+
+    .education-card img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .education-section h1{
+        font-size: 35px;
+        top: 10px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 376px) {
+    .education-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .education-card {
+        width: 90vw;
+        height: 40vh;
+        margin: 10px;
+        left: 13px;
     }
 
     .education-card p {
