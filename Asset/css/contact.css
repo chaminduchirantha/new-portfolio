@@ -126,35 +126,54 @@ input textarea::placeholder {
     background-color:yellow;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .contact-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contact-card {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .contact-form div {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .contact-form {
-        padding: 25px;
-    }
-
-    .contact-section h2 {
-        font-size: 2rem;
+@media (min-width: 1024px) and (max-width: 1290px) {
+    .contact-section {
+        position: relative;
+        top: -150px;
+        height: 150vh;
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 670px) and (max-width: 1023px) {
     .contact-section {
+        position: relative;
+        top: -150px;
+        height: 150vh;
+    }
+
+    .contact-section h2{
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 378px) and (max-width: 650px) {
+    .contact-section {
+        height: 250vh;
         padding: 40px 15px;
+        position: relative;
+        top: 350px;
+    }
+
+    .contact-form {
+        padding: 20px 15px;
+    }
+
+    .contact-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .send-btn {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 376px) {
+    .contact-section {
+        height: 250vh;
+        padding: 40px 15px;
+        position: relative;
+        top: 250px;
     }
 
     .contact-form {
