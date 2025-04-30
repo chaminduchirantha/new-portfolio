@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="Asset/css/education.css">
     <link rel="stylesheet" href="Asset/css/myWorks.css">
     <link rel="stylesheet" href="Asset/css/skil.css">
+    <link rel="stylesheet" href="Asset/css/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -34,7 +35,7 @@
             <li><a href="#education">Education</a></li>
             <li><a href="#">My Works</a></li>
             <li><a href="#skill">Skills</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <img src="Asset/images/icons8-menu-50%20(2).png" alt="menuBar" id="menu-bar" width="50">
     </nav>
@@ -213,5 +214,46 @@
     </section>
 
 
+    <section class="contact-section" id="contact">
+        <h2>Contact</h2>
+        <div class="contact-container">
+            <div class="contact-card">
+                <i class="fa-solid fa-phone"></i>
+                <h4 class="phone-item">Phone</h4>
+                <p class="phone-number">077335204</p>
+            </div>
+
+            <div class="contact-card">
+                <i class="fa-solid fa-envelope"></i>
+                <h4 class="item-email">Email</h4>
+                <p class="email-add">chaminduchirantha73@gmail.com</p>
+            </div>
+
+            <div class="contact-card">
+                <i class="fa-solid fa-location-dot"></i>
+                <h4 class="location-item">Location</h4>
+                <p>Piliyandala</p>
+            </div>
+        </div>
+        <div>
+            <form class="contact-form">
+                <div>
+                    <input type="text" placeholder="Your Name" class="name" required>
+                </div>
+                <div>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div>
+                    <input type="text" placeholder="Subject" class="subject" required>
+                </div>
+                <div>
+                    <textarea placeholder="Message" required class="massage"></textarea>
+                </div>
+                <button type="submit" class="send-btn">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
