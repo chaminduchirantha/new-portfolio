@@ -34,15 +34,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 65px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
     /*background-color: white;*/
     border-radius: 50%;
-    color: #d4cdcd;
-    font-size: 2.5rem;
+    border: 2px solid gold;
+    color: gold;
+    font-size: 2.0rem;
     text-decoration: none;
     transition: all 0.3s ease;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px gold;
 }
 
 .social-links a:hover {
