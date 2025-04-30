@@ -35,12 +35,37 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    overflow: hidden;
+}
+
+.woks-card:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-image: linear-gradient(gold, rgba(159, 255, 0, 0.78));
+    box-shadow: 0 0 10px gold;
+    height: 135%;
+    top: -20px;
+    z-index: -200;
+    border-radius: 1px;
+    animation: box 12s linear infinite;
+}
+
+@keyframes box {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(100%);
+        box-shadow: 0 0 10px gold;
+    }
 }
 
 .woks-card h2 {
     font-size: 30px;
     margin-bottom: 20px;
     text-align: center;
+    color: black;
 }
 
 .woks-card p {
