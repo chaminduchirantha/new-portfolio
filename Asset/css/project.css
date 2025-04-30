@@ -109,3 +109,100 @@ body{
     top: 980px;
     margin: auto;
 }
+
+@media (min-width: 1024px) and (max-width: 1250px){
+    .project-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-card {
+        width: 45vw;
+        height: 48vh;
+    }
+
+    .project-card h2{
+        font-size: 25px;
+    }
+    .project-card p{
+        font-size: 17px;
+    }
+
+    .project-button{
+        position: absolute;
+        top: 1200px;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 1023px) {
+    .project-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-card {
+        width: 45vw;
+        height: 58vh;
+    }
+
+    .project-card h2{
+        font-size: 25px;
+    }
+    .project-card p{
+        font-size: 17px;
+    }
+
+    .project-button{
+        position: absolute;
+        top: 1400px;
+    }
+}
+
+@media (min-width: 379px) and (max-width: 650px) {
+    .project-section {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        width: 90vw;
+        height: 45vh;
+    }
+
+    .project-card h2{
+        font-size: 25px;
+    }
+    .project-card p{
+        font-size: 17px;
+    }
+
+    .project-button{
+        position: absolute;
+        top: 2100px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 378px) {
+    .project-section {
+        grid-template-columns: 1fr;
+        padding: 60px 10px;
+    }
+
+    .project-card {
+        width: 90vw;
+        height: 45vh;
+        margin-left: 20px;
+    }
+
+    .project-card h2{
+        font-size: 20px;
+    }
+    .project-card p{
+        font-size: 15px;
+    }
+
+    .project-button{
+        font-size: 16px;
+        width: 150px;
+        position: absolute;
+        top: 2100px;
+    }
+}
+
