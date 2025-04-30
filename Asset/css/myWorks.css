@@ -81,82 +81,68 @@
     text-align: center;
 }
 
-/* Breakpoint: 1024px */
-@media (max-width: 1024px) {
-    .woks-card {
-        width: 40vw;
-        height: auto;
-    }
-
-    .my-works h1 {
-        font-size: 45px;
-    }
-}
-
-/* Breakpoint: 768px */
-@media (max-width: 768px) {
-    .my-works {
-        flex-direction: column;
-        align-items: center;
-    }
+@media (min-width: 1024px) and (max-width: 1250px){
 
     .woks-card {
-        width: 80%;
-        height: auto;
-    }
-
-    .my-works h1 {
-        font-size: 40px;
-    }
-}
-
-/* Breakpoint: 425px */
-@media (max-width: 425px) {
-    .woks-card {
-        width: 45%;
-    }
-
-    .my-works h1 {
-        font-size: 36px;
-    }
-
-    .woks-card h2 {
-        font-size: 24px;
-    }
-
-    .woks-card p {
-        font-size: 16px;
-    }
-}
-
-/* Breakpoint: 375px */
-@media (max-width: 375px) {
-    .woks-card {
-        width: 95%;
-
-    }
-
-    .my-works h1 {
-        font-size: 32px;
-    }
-
-    .woks-card h2 {
-        font-size: 22px;
-    }
-}
-
-@media (min-width: 379px) and (max-width: 560px) {
-    .woks-card {
-        width:90vw;
+        width:50vw;
         height: auto;
         position: relative;
-        top:540px;
+        top:230px;
         left: -10px;
     }
 
     .my-works h1 {
+        font-size: 48px;
+        top: 250px;
+        left: -10px;
+    }
+
+    .woks-card h2 {
+        font-size: 20px;
+    }
+
+    .woks-card p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 1023px) {
+    .woks-card {
+        width:50vw;
+        height: auto;
+        position: relative;
+        top:130px;
+        left: -10px;
+    }
+
+    .my-works h1 {
+        font-size: 40px;
+        top: 150px;
+        left: -10px;
+    }
+
+    .woks-card h2 {
+        font-size: 20px;
+    }
+
+    .woks-card p {
+        font-size: 14px;
+    }
+}
+
+
+@media (min-width: 379px) and (max-width: 650px) {
+    .woks-card {
+        width:90vw;
+        height: auto;
+        position: relative;
+        top:690px;
+        left: 0px;
+    }
+
+    .my-works h1 {
         font-size: 28px;
-        top: 550px;
+        top: 720px;
         left: -10px;
     }
 
@@ -173,16 +159,16 @@
 @media (min-width: 220px) and (max-width: 378px) {
     .woks-card {
         width:90vw;
-        height: auto;
+        height: 48vh;
         position: relative;
         top:540px;
-        left: -10px;
+        left: 5px;
     }
 
     .my-works h1 {
         font-size: 28px;
         top: 550px;
-        left: -10px;
+        left: 5px;
     }
 
     .woks-card h2 {
