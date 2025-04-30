@@ -109,7 +109,7 @@
     .about-content h1 {
         font-size: 30px;
         /*left: 35%;*/
-        top: 100px;
+        top:400px;
     }
 
     .about-content p {
@@ -169,6 +169,7 @@
 
     .about-content h1 {
         font-size: 18px;
+        top: 30px;
         /*left: 2%;*/
     }
 
