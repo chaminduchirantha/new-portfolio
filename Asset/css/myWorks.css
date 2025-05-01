@@ -36,6 +36,12 @@
     align-items: center;
     padding: 20px;
     overflow: hidden;
+    transition-duration: 0.5s;
+}
+
+.woks-card:hover {
+    transform: scale(0.97);
+
 }
 
 .woks-card:before{
